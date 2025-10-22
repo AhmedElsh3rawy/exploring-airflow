@@ -17,7 +17,6 @@ def get_name():
 with DAG(
     dag_id="dag_with_args_from_xcom",
     default_args=default_args,
-    description="My second airflow dag",
     start_date=datetime(2021, 4, 4, 2),
     schedule="@daily",
 ) as dag:
